@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2026
+ *
+ * Licensed under the MIT License.
+ * See LICENSE file in the project root for full license information.
+ */
+
 // SDRAM Controller for HY57V2562GTR (4M × 16-bit × 4 banks = 32 MB)
 // 50 MHz system clock, BL=1, CL=3
 // Provides 32-bit CPU interface via two consecutive 16-bit SDRAM accesses

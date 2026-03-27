@@ -60,4 +60,7 @@ minicom -b 115200 -D /dev/ttyUSB0
 ## Notes
 
 - This repo intentionally excludes generated `.rbf/.sof` and build outputs.
-- If you want to share known-good bitstreams, attach them in Releases.
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+The `neorv32/` submodule remains under its original BSD 3-Clause License.

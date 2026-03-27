@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2026
+ *
+ * Licensed under the MIT License.
+ * See LICENSE file in the project root for full license information.
+ */
+
 -- ax301_top.vhd — NEORV32 SoC wrapper for 黑金 AX301 (EP4CE6F17C8)
 --
 -- Memory map (NEORV32 fixed):

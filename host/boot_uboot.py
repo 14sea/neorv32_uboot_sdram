@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+#
+# Copyright (c) 2026
+#
+# Licensed under the MIT License.
+# See LICENSE file in the project root for full license information.
+#
+
 """
 boot_uboot.py — Full boot sequence: FPGA → bootloader → stage2 → xmodem → U-Boot
 

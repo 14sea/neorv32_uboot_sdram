@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2026
+ *
+ * Licensed under the MIT License.
+ * See LICENSE file in the project root for full license information.
+ */
+
 // wb_sdram_ctrl.v — Wishbone (NEORV32 XBUS) to sdram_ctrl bridge
 //
 // Maps NEORV32 XBUS Wishbone cycles to the sdram_ctrl.v interface.

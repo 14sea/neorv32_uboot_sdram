@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+#
+# Copyright (c) 2026
+#
+# Licensed under the MIT License.
+# See LICENSE file in the project root for full license information.
+#
+
 """
 load_uboot.py — Upload stage2_loader then send U-Boot via xmodem.
 

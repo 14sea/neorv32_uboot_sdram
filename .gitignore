@@ -1,0 +1,32 @@
+# Quartus generated files
+/quartus/db/
+/quartus/incremental_db/
+/quartus/*.sof
+/quartus/*.done
+/quartus/*.jdi
+/quartus/*.pin
+/quartus/*.sld
+/quartus/*.smsg
+/quartus/*.rpt
+/quartus/*.summary
+
+# Top-level generated bitstreams
+/*.rbf
+
+# Build outputs from software subprojects
+/sw/**/build/
+/sw/**/*.o
+/sw/**/*.elf
+/sw/**/*.bin
+/sw/**/*.map
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Editor and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store

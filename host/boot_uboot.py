@@ -1,11 +1,4 @@
 #!/usr/bin/env python3
-#
-# Copyright (c) 2026
-#
-# Licensed under the MIT License.
-# See LICENSE file in the project root for full license information.
-#
-
 """
 boot_uboot.py — Full boot sequence: FPGA → bootloader → stage2 → xmodem → U-Boot
 
@@ -221,10 +214,18 @@ def main():
 
     # Execute stage2
     ser.write(b"e")
-    time.sleep(0.05)
+    ser.flush()
 
     # ── Step 3: Switch to 115200, wait for stage2 prompt ──
-    ser.baudrate = APP_BAUD
+    # Close and reopen serial port for clean baud rate switch.
+    # Direct ser.baudrate change corrupts bytes if the tty driver is
+    # mid-reception of the bootloader's last 19200-baud message.
+    ser.close()
+    time.sleep(0.3)
+    ser = serial.Serial(args.port, APP_BAUD, timeout=0.5,
+                        xonxoff=False, rtscts=False, dsrdtr=False)
+    ser.dtr = False
+    ser.rts = False
     print(f"\n[3] Switched to {APP_BAUD} baud, waiting for stage2...")
 
     # Read stage2 output until we see NAK byte (0x15) = xmodem ready
